@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Nota Nota Nota</string>
+    <string name="app_version">v1.1</string>
+    <string name="app_short_description">Biasa2 tapi padat</string>
+    <string name="app_contact">Contact us/Hubungi Kami: ticherhaz@gmail.com</string>
     <string name="buat_nota">Buat Nota</string>
     <string name="tulis_nota_disini">Tulis nota disini…</string>
 </resources>
