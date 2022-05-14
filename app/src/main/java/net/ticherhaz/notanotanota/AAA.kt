@@ -4,9 +4,7 @@ import android.app.Dialog
 import android.os.Bundle
 import android.view.*
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import net.ticherhaz.notanotanota.databinding.ActivityAaaBinding
 
@@ -26,10 +24,6 @@ class AAA : AppCompatActivity() {
         ccc = CustomAdapter(lll as ArrayList<YYY>)
         binding.rv.apply {
             adapter = ccc
-            val ll = LinearLayoutManager(context)
-            ll.stackFromEnd = true
-            ll.reverseLayout = true
-            layoutManager = ll
         }
     }
 
@@ -42,7 +36,6 @@ class AAA : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.item_about) {
             dd()
-            Toast.makeText(this@AAA, "About", Toast.LENGTH_LONG).show()
         }
         return super.onOptionsItemSelected(item)
     }
