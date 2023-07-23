@@ -22,7 +22,7 @@ class AAA : AppCompatActivity() {
         setContentView(binding.root)
 
         if (ZZZ.getInstance()!!.isKeyExists(COO.NOTE_LIST)) lll =
-            ZZZ.getInstance()!!.getObjectsList(COO.NOTE_LIST)!!
+            ZZZ.getInstance()!!.getObjectsListCustom<YYY>(COO.NOTE_LIST)!!
 
         //Creating the adapter
         ccc = CustomAdapter(lll as ArrayList<YYY>)
