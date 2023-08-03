@@ -5,14 +5,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 34
     namespace 'net.ticherhaz.notanotanota'
     defaultConfig {
         applicationId "net.ticherhaz.notanotanota"
         minSdkVersion 16
         targetSdkVersion 34
-        versionCode 16
-        versionName "1.6"
+        versionCode 17
+        versionName "1.7"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +44,7 @@ android {
         }
         resources.excludes.add("META-INF/*")
     }
+    compileSdk 34
 }
 
 dependencies {
